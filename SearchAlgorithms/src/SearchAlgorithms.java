@@ -44,13 +44,17 @@ public class SearchAlgorithms {
 			
 			if (test[mid] < query)
 			{
-				int L ==  mid;
+				 L =  mid;
 			}
 			if (test[mid] > query)
 			{
-				int R ==  mid;
+				 R =  mid;
+			}
+			if (test[mid] == query)
+			{
+				return mid;
 			}
 		}
-		}
+		return -1;
 	}
 }
